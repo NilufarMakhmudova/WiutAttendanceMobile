@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/relative_layout_information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true">
+        
+        <TextView
+        	android:id="@+id/textView_reschedule_group_name"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/seminar_group_name" 
+        	android:ems="5"
+        	android:gravity="right"
+        	android:layout_marginRight="5dp"
+        	android:layout_marginBottom="10dp"
+        	android:textSize="17sp"
+        	/>
+        
+         <TextView
+        	android:id="@+id/textView_reschedule_group_name_2"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_toRightOf="@id/textView_reschedule_group_name"
+        	android:layout_alignBaseline="@id/textView_reschedule_group_name"
+        	android:textSize="17sp"
+        	/>
+         
+          <TextView
+	    	android:id="@+id/textView_reschedule_module_name"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@id/textView_reschedule_group_name"
+	    	android:text="@string/seminar_module_name"
+	    	android:layout_alignRight="@id/textView_reschedule_group_name" 
+	    	android:ems="5"
+        	android:gravity="right"
+        	android:layout_marginRight="5dp"
+        	android:layout_marginBottom="10dp"
+        	android:textSize="17sp"/>
+        
+         <TextView
+	    	android:id="@+id/textView_reschedule_module_name_2"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@id/textView_reschedule_group_name_2"
+	    	android:layout_toRightOf="@id/textView_reschedule_module_name"
+	    	android:layout_alignBaseline="@id/textView_reschedule_module_name"
+        	android:layout_alignLeft="@id/textView_reschedule_group_name_2"
+        	android:textSize="17sp"
+	    	/>
+         
+         <TextView
+	    	android:id="@+id/textView_reschedule_teachingweek_number"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@id/textView_reschedule_module_name"
+	    	android:text="@string/seminar_teachingweek_number" 
+	    	android:layout_alignRight="@id/textView_reschedule_group_name"
+	    	android:ems="5"
+        	android:gravity="right"
+        	android:layout_marginRight="5dp"
+        	android:layout_marginBottom="10dp"
+        	android:textSize="17sp"
+	    	/>
+
+        <TextView
+	    	android:id="@+id/textView_reschedule_teachingweek_number_2"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@id/textView_reschedule_module_name_2"
+	    	android:layout_toRightOf="@id/textView_reschedule_teachingweek_number"
+        	android:layout_alignBaseline="@id/textView_reschedule_teachingweek_number"
+        	android:layout_alignLeft="@id/textView_reschedule_group_name_2"
+        	android:textSize="17sp"
+	    	 />
+        
+        
+        <TextView
+	    	android:id="@+id/textView_reschedule_from"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/reschedule_from"
+	    	android:layout_below="@id/textView_reschedule_teachingweek_number"
+	    	android:layout_alignRight="@id/textView_reschedule_group_name"
+	    	android:ems="5"
+        	android:gravity="right"
+        	android:layout_marginRight="5dp"
+        	android:layout_marginBottom="20dp"
+        	android:textSize="17sp"
+	    	 />
+
+        <Button
+            android:id="@+id/btn_reschedule_from_date"
+            style="@style/ButtonAppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/textView_reschedule_from"
+            android:layout_alignLeft="@id/textView_reschedule_group_name_2"
+            android:layout_below="@id/textView_reschedule_teachingweek_number_2"
+            android:layout_toRightOf="@id/textView_reschedule_from" />
+
+        <Button
+            android:id="@+id/btn_reschedule_from_time"
+            style="@style/ButtonAppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/btn_reschedule_from_date"
+            android:layout_below="@id/textView_reschedule_teachingweek_number_2"
+            android:layout_toRightOf="@id/btn_reschedule_from_date" />
+        
+         <TextView
+	    	android:id="@+id/textView_reschedule_to"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/reschedule_to"
+	    	android:layout_below="@id/textView_reschedule_from"
+	    	android:layout_alignRight="@id/textView_reschedule_group_name"
+	    	android:ems="5"
+        	android:gravity="right"
+        	android:layout_marginRight="5dp"
+        	android:layout_marginBottom="10dp"
+        	android:textSize="17sp"
+	    	 />
+
+        <Button
+            android:id="@+id/btn_reschedule_to_date"
+            style="@style/ButtonAppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/textView_reschedule_to"
+            android:layout_alignLeft="@id/textView_reschedule_group_name_2"
+            android:layout_below="@id/btn_reschedule_from_date"
+            android:layout_toRightOf="@id/textView_reschedule_to" />
+
+        <Button
+            android:id="@+id/btn_reschedule_to_time"
+            style="@style/ButtonAppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/btn_reschedule_to_date"
+            android:layout_below="@id/btn_reschedule_from_time"
+            android:layout_toRightOf="@id/btn_reschedule_to_date" />
+        
+        <TextView
+	    	android:id="@+id/textView_reschedule_reason"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/reschedule_reason"
+	    	android:layout_below="@id/textView_reschedule_to"
+	    	android:layout_alignRight="@id/textView_reschedule_group_name"
+	    	android:ems="5"
+        	android:gravity="right"
+        	android:layout_marginRight="5dp"
+        	android:layout_marginBottom="10dp"
+        	android:textSize="17sp"
+	    	 />
+        
+        <EditText
+            android:id="@+id/editText_reschedule_reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/textView_reschedule_reason"
+            android:layout_alignLeft="@id/textView_reschedule_group_name_2"
+            android:layout_below="@id/btn_reschedule_to_date"
+            android:layout_toRightOf="@id/textView_reschedule_reason"
+            android:hint="@string/reschedule_reason_hint"
+            android:inputType="textCapSentences"
+            android:textSize="17sp" />
+        
+        </RelativeLayout>
+  
+    <RelativeLayout
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+   		android:layout_alignParentBottom="true">
+       
+        <Button
+            android:id="@+id/btn_reschedule_seminar"
+            style="@style/ButtonAppTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_reschedule_seminar" />
+             
+     </RelativeLayout>
+   
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:textSize="16sp"/>
+    
+    <RelativeLayout
+        android:id="@+id/relative_layout_information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        >
+
+        <TextView
+            android:id="@+id/textView_seminar_group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="6"
+            android:gravity="right"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/seminar_group_name" />
+        
+        <Spinner
+            android:id="@+id/spinner_seminar_group_name"
+            style="@style/SpinnerAppTheme"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/textView_seminar_group_name"
+            android:layout_toRightOf="@id/textView_seminar_group_name" />
+    
+        <TextView
+	    	android:id="@+id/textView_seminar_module_name"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@id/textView_seminar_group_name"
+	    	android:layout_alignRight="@id/textView_seminar_group_name"
+	    	android:ems="6"
+	    	android:gravity="right"
+	    	android:textSize="16sp"
+	    	android:layout_marginBottom="10dp"
+	    	android:text="@string/seminar_module_name" />
+        
+         <Spinner
+             android:id="@+id/spinner_seminar_module_name"
+             style="@style/SpinnerAppTheme"
+             android:layout_width="200dp"
+             android:layout_height="wrap_content"
+             android:layout_alignBaseline="@id/textView_seminar_module_name"
+             android:layout_alignLeft="@id/spinner_seminar_group_name"
+             android:layout_below="@id/spinner_seminar_group_name"
+             android:layout_toRightOf="@id/textView_seminar_module_name" />
+   
+        <TextView
+	    	android:id="@+id/textView_seminar_teachingweek_number"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@id/textView_seminar_module_name"
+	    	android:layout_alignRight="@id/textView_seminar_module_name"
+	    	android:ems="6"
+	   		android:gravity="right"
+	   		android:textSize="16sp"
+	   		android:layout_marginBottom="10dp"
+	    	android:text="@string/seminar_teachingweek_number" />
+
+        <Spinner
+            android:id="@+id/spinner_seminar_teachingweek_number"
+            style="@style/SpinnerAppTheme"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/textView_seminar_teachingweek_number"
+            android:layout_alignLeft="@id/spinner_seminar_group_name"
+            android:layout_below="@id/spinner_seminar_module_name"
+            android:layout_toRightOf="@id/textView_seminar_teachingweek_number" />
+        
+        <CheckBox
+            android:id="@+id/checkBox_isRescheduledSeminar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_seminar_teachingweek_number"
+            android:layout_centerVertical="true"
+            android:text="@string/seminar_isRescheduledSeminar"
+            android:textSize="16sp" />
+        
+  </RelativeLayout>
+  
+         
+      <RelativeLayout
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+   		android:layout_alignParentBottom="true">
+       
+        <Button
+            android:id="@+id/btn_start_seminar"
+            style="@style/ButtonAppTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_start_seminar" />
+
+        <Button
+            android:id="@+id/btn_reschedule_seminar"
+            style="@style/ButtonAppTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_start_seminar"
+            android:text="@string/btn_reschedule_seminar" />
+             
+     </RelativeLayout>
+</RelativeLayout>
+
+
